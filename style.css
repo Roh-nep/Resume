@@ -59,6 +59,21 @@ header p {
 .btn:hover {
     background: #16a34a;
 }
+.back-link {
+    display: inline-block;
+    margin-top: 20px; /* Space from previous content */
+    padding: 10px 20px;
+    background: #22c55e; /* Green background */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.back-link:hover {
+    background: #16a34a; /* Darker green when hovered */
+}
 
 /* Skills Section */
 #skills {
