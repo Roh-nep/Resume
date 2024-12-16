@@ -19,6 +19,7 @@
             color: #333;
             line-height: 1.6;
             font-size: 16px;
+            padding: 0 20px; /* Add horizontal padding for better spacing */
         }
 
         /* Header Styles */
@@ -27,6 +28,8 @@
             color: white;
             text-align: center;
             padding: 20px;
+            border-radius: 8px; /* Softens header corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
         }
 
         /* Footer Styles */
@@ -34,17 +37,18 @@
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 10px;
-            position: relative;
-            margin-top: 40px;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
             width: 100%;
+            border-top: 1px solid #fff; /* Adds a border for distinction */
         }
 
         /* Section Styles */
         section {
             padding: 20px;
-            margin-top: 60px; /* To prevent overlap with the header */
-            padding-bottom: 40px; /* Add padding to ensure footer doesn't overlap the content */
+            margin-top: 80px; /* Increased space to prevent overlap with header */
         }
 
         h1 {
@@ -55,24 +59,26 @@
         p {
             font-size: 1rem;
             margin-bottom: 15px;
+            text-align: justify;
         }
 
         .project-image {
             max-width: 100%; /* Ensure images don't overflow */
             height: auto;
             margin-bottom: 20px;
+            border-radius: 8px; /* Softens image corners */
         }
 
+        /* Link Styling */
         .back-link {
             display: inline-block;
-            margin-top: 20px;
-            font-size: 1rem;
-            padding: 10px;
             background-color: #4CAF50;
             color: white;
+            padding: 10px 15px;
             text-decoration: none;
+            font-weight: bold;
             border-radius: 5px;
-            text-align: center;
+            margin-top: 20px;
         }
 
         .back-link:hover {
@@ -91,6 +97,10 @@
 
             section {
                 padding: 15px;
+            }
+
+            .project-image {
+                width: 100%; /* Make images full-width on smaller screens */
             }
         }
 
@@ -117,35 +127,37 @@
 <body>
 
     <header>
-       <h1>Project 1: Structural Design of Multistoreyed Commercial Building using NBC 105_2020</h1>
+        <h1>Project 1: Structural Design of Multistoreyed Commercial Building using NBC 105_2020</h1>
     </header>
 
     <section>
         <div>
-            <p style="max-width: 800px; margin: 0 auto; line-height: 1.6; text-align: justify;">
-                This project involved designing and analyzing a multi-storeyed commercial building using 
-                tools such as AutoCAD and ETABS. My role focused on ensuring structural stability, load 
-                distribution optimization, and adhering to safety standards.
+            <p style="max-width: 800px; margin: 0 auto;">
+                This project involved designing and analyzing a multi-storeyed commercial building using tools such as AutoCAD and ETABS. My role focused on ensuring structural stability, load distribution optimization, and adhering to safety standards.
             </p>
-            <p style="max-width: 800px; margin: 0 auto; line-height: 1.6; text-align: justify;">
-                I worked closely on structural calculations and simulations to ensure the project met 
-                all regulatory guidelines. This experience enhanced my technical design and analysis skills.
+            <p style="max-width: 800px; margin: 0 auto;">
+                I worked closely on structural calculations and simulations to ensure the project met all regulatory guidelines. This experience enhanced my technical design and analysis skills.
             </p>
+
             <figure>
-                <img src="location.png" class="project-image">
+                <img src="location.png" class="project-image" alt="Site location in Putalisadak, Kathmandu">
                 <figcaption>Putalisadak Site, Kathmandu, on March 10, 2023</figcaption>
-                <br>
-                <img src="Image1.jpg" class="project-image" style="width: 50%;">
-                <img src="Image2.jpg" class="project-image" style="width: 50%;">
-                <img src="Image3.jpg" class="project-image">
+                
+                <div>
+                    <img src="Image1.jpg" class="project-image" alt="Building front view" style="width: 48%; margin-right: 4%;">
+                    <img src="Image2.jpg" class="project-image" alt="Construction site view" style="width: 48%;">
+                </div>
+
+                <img src="Image3.jpg" class="project-image" alt="Building construction details">
             </figure>
+
+            <a href="index.html" class="back-link">Back to Portfolio</a>
         </div>
     </section>
-
-    <a href="index.html" class="back-link">Back to Portfolio</a>
 
     <footer>
         <p>&copy; 2024 Rohit Tiwari. All Rights Reserved.</p>
     </footer>
+
 </body>
 </html>
