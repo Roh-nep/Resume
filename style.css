@@ -12,85 +12,88 @@ body {
     line-height: 1.6;
 }
 
-.container {
+/* Project Section */
+.project-container {
     width: 80%;
     margin: 0 auto;
-    text-align: center;
     padding: 40px 0;
+    text-align: left;
 }
 
-/* Header Section */
-header {
-    background: linear-gradient(to right, #3b82f6, #2563eb);
-    color: #fff;
-    padding: 50px 0;
-    text-align: center;
-}
-
-header .profile img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 20px 0;
-    border: 5px solid #fff;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-header p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background: #22c55e;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.btn:hover {
-    background: #16a34a;
-}
-
-/* Skills Section */
-#skills {
-    background-color: #fff;
-    padding: 50px 0;
-}
-
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-.skill-item {
-    background: #3b82f6;
-    color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
-}
-
-.skill-item i {
+.project-container h1 {
     font-size: 2rem;
+    color: #3b82f6;
+    margin-bottom: 20px;
+}
+
+.project-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.project-container p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Project Responsibilities & Contributions Section */
+.project-responsibilities ul,
+.project-tools ul,
+.project-challenges ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-responsibilities li,
+.project-tools li,
+.project-challenges li {
     margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #333;
 }
 
-.skill-item:hover {
-    transform: scale(1.05);
+.project-responsibilities li strong,
+.project-tools li strong,
+.project-challenges li strong {
+    color: #2563eb;
 }
 
-/* Style for the container of all the cards */
+/* Project Media Section */
+.project-media {
+    margin-top: 40px;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Style for Video */
+.project-media video {
+    margin-top: 20px;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Back to Portfolio Link */
+a {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Project Cards */
 .project-cards {
     display: flex;
     justify-content: space-between;
@@ -99,66 +102,64 @@ header p {
     padding: 30px;
     box-sizing: border-box;
     margin: 0 auto;
-    max-width: 1200px; /* Adjust the max width as needed */
+    max-width: 1200px;
 }
 
 /* Style for each individual card */
 .project-card {
-    background-color: #f9f9f9; /* Light background color */
-    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9;
+    border-radius: 8px;
     padding: 20px;
-    text-align: center; /* Center-align content */
-    width: 30%; /* Adjust width depending on the screen size */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Style for the images inside the cards */
-.project-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px; /* Space between image and button */
-}
-
-/* Style for the project title */
 .project-card h3 {
     font-size: 1.5rem;
-    color: #333; /* Dark text color */
-    margin-bottom: 10px; /* Space between title and image */
+    color: #333;
+    margin-bottom: 10px;
     font-weight: bold;
 }
 
-/* Style for the View Details button */
-button {
-    background-color: #4CAF50; /* Green background */
+.project-card .project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* View Details Button inside Project Cards */
+.project-card button {
+    background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s ease; /* Smooth hover transition */
+    transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #45a049; /* Darker green when hovered */
+.project-card button:hover {
+    background-color: #45a049;
 }
 
-/* Media query for smaller screens */
+/* Media Query for Smaller Screens */
 @media (max-width: 768px) {
     .project-card {
-        width: 100%; /* Stack cards in a single column for small screens */
+        width: 100%; /* Stack cards in a single column */
         margin-bottom: 20px;
     }
 
     .project-cards {
-        justify-content: center; /* Center the cards in smaller screens */
+        justify-content: center; /* Center the cards on small screens */
     }
 }
 
