@@ -2,9 +2,125 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Project 2: Happy Shirts & Yourshell Hostel</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Global Body Styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Section Styles */
+    section {
+      padding: 20px;
+      margin-top: 60px; /* To prevent overlap with the header */
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #4CAF50;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+
+    .project-image {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .project-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .project-container img {
+      width: 45%;
+      margin: 10px;
+    }
+
+    /* Media Queries for Responsiveness */
+    @media screen and (max-width: 768px) {
+      body {
+        font-size: 14px;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      section {
+        padding: 15px;
+      }
+
+      .project-container img {
+        width: 80%;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      body {
+        font-size: 13px;
+      }
+
+      h1 {
+        font-size: 1.3rem;
+      }
+
+      header, footer {
+        padding: 15px;
+      }
+
+      section {
+        padding: 10px;
+      }
+
+      .project-container img {
+        width: 100%;
+      }
+    }
+
+  </style>
 </head>
 <body>
   <header>
