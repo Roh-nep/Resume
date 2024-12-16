@@ -19,6 +19,13 @@
             text-align: center;
         }
 
+        header img {
+            width: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
         nav {
             display: flex;
             justify-content: center;
@@ -37,7 +44,7 @@
         }
 
         section {
-            padding: 20px;
+            padding: 40px 20px;
             text-align: center;
         }
 
@@ -55,11 +62,22 @@
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
         }
 
+        .project img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+
         footer {
             text-align: center;
             padding: 20px;
             background: #4CAF50;
             color: white;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+            left: 0;
         }
 
         .social-icons a {
@@ -77,21 +95,21 @@
 <body>
     <header>
         <h1>Welcome to My Portfolio</h1>
-         <!-- Add Profile Picture Here -->
-        <img src="image.png.png" alt="Profile Picture" style="width: 150px; border-radius: 50%; display: block; margin: 0 auto;">
+        <!-- Add Profile Picture Here -->
+        <img src="image.png.png" alt="Profile Picture" class="profile-img">
         <div class="skills-intro">
-  <p>Hi! I am Rohit Tiwari, a Civil Engineer | Structural Designer | Future Entrepreneur.</p>
-  <p>Skills:</p>
-  <ul>
-    <li>Structural Analysis and Design</li>
-    <li>Engineering Economics</li>
-    <li>Project Management</li>
-    <li>AutoCAD, ETABS, and other design tools</li>
-    <li>Technical Writing (including SEO and content creation)</li>
-    <li>WordPress Website Design</li>
-    <li>Problem-Solving and Leadership</li>
-  </ul>
-</div>
+            <p>Hi! I am Rohit Tiwari, a Civil Engineer | Structural Designer | Future Entrepreneur.</p>
+            <p>Skills:</p>
+            <ul>
+                <li>Structural Analysis and Design</li>
+                <li>Engineering Economics</li>
+                <li>Project Management</li>
+                <li>AutoCAD, ETABS, and other design tools</li>
+                <li>Technical Writing (including SEO and content creation)</li>
+                <li>WordPress Website Design</li>
+                <li>Problem-Solving and Leadership</li>
+            </ul>
+        </div>
     </header>
 
     <nav>
@@ -107,22 +125,21 @@
 
                 Alongside my engineering experience, I have worked as a tutor, teaching subjects like math, physics, and chemistry, which has helped me develop strong communication and mentoring skills. My passion for entrepreneurship and technical writing has led me to work on website design, content creation, and startup projects like Your Shell Hostel and Happy Shirts.
                 
-                I enjoy taking on challenging projects and aim to create solutions that make a positive impact in the engineering and business worlds..</p>
+                I enjoy taking on challenging projects and aim to create solutions that make a positive impact in the engineering and business worlds.</p>
         </div>
     </section>
 
     <section id="projects">
         <div class="container">
             <h2>Projects</h2>
-           <div class="project">
-    <h3>Project 1</h3>
-    <p>Description of your project. <a href="project1.html">View Project</a></p>
-</div>
-<div class="project">
-    <h3>Project 2</h3>
-    <p>Description of your project. <a href="project2.html">View Project</a></p>
-</div>
-
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Description of your project. <a href="project1.html">View Project</a></p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of your project. <a href="project2.html">View Project</a></p>
+            </div>
         </div>
     </section>
 
