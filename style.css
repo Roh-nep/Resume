@@ -90,29 +90,76 @@ header p {
     transform: scale(1.05);
 }
 
-/* Projects Section */
-#projects {
-    background-color: #f9fafb;
-    padding: 50px 0;
-}
-
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+/* Style for the container of all the cards */
+.project-cards {
+    display: flex;
+    justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap;
+    padding: 30px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1200px; /* Adjust the max width as needed */
 }
 
-.project-item {
-    background: #fff;
+/* Style for each individual card */
+.project-card {
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s;
+    text-align: center; /* Center-align content */
+    width: 30%; /* Adjust width depending on the screen size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
 }
 
-.project-item:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+.project-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+}
+
+/* Style for the images inside the cards */
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px; /* Space between image and button */
+}
+
+/* Style for the project title */
+.project-card h3 {
+    font-size: 1.5rem;
+    color: #333; /* Dark text color */
+    margin-bottom: 10px; /* Space between title and image */
+    font-weight: bold;
+}
+
+/* Style for the View Details button */
+button {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green when hovered */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .project-card {
+        width: 100%; /* Stack cards in a single column for small screens */
+        margin-bottom: 20px;
+    }
+
+    .project-cards {
+        justify-content: center; /* Center the cards in smaller screens */
+    }
 }
 
 /* Contact Section */
