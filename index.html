@@ -81,15 +81,32 @@
         }
 
         .social-icons a {
-            margin: 0 10px;
-            color: white;
-            text-decoration: none;
-            font-size: 1.5rem;
-        }
+    margin: 0 10px;
+    font-size: 2rem; 
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
 
-        .social-icons a:hover {
-            color: #ddd;
-        }
+.social-icons .linkedin {
+    color: #0077b5; /* LinkedIn Blue */
+}
+
+.social-icons .github {
+    color: #333; /* GitHub Dark */
+}
+
+.social-icons .twitter {
+    color: #1da1f2; /* Twitter Blue */
+}
+
+.social-icons a:hover {
+    color: #ddd; /* Hover effect for all icons */
+}
+
+.social-icons i {
+    margin-right: 8px;
+}
     </style>
 </head>
 <body>
@@ -150,13 +167,13 @@
             <p>Phone: 9848660757</p>
 
            <div class="social-icons">
-    <a href="https://www.linkedin.com/in/rohit-tiwari-0b0319180/" target="_blank">
+    <a href="https://www.linkedin.com/in/rohit-tiwari-0b0319180/" target="_blank" class="linkedin">
         <i class="fab fa-linkedin"></i> LinkedIn
     </a>
-    <a href="https://github.com/yourusername" target="_blank">
+    <a href="https://github.com/yourusername" target="_blank" class="github">
         <i class="fab fa-github"></i> GitHub
     </a>
-    <a href="https://twitter.com/yourusername" target="_blank">
+    <a href="https://twitter.com/yourusername" target="_blank" class="twitter">
         <i class="fab fa-twitter"></i> Twitter
     </a>
 </div>
