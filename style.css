@@ -93,7 +93,8 @@ header p {
 /* Style for the container of all the cards */
 .project-cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
     flex-wrap: wrap;
     padding: 30px;
