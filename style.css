@@ -24,7 +24,7 @@ body {
 }
 /* Blog Button Styling */
 .blog-button {
-    position: fixed; /* Fix the button's position */
+    position:fixed; /* Fix the button's position */
     top: 20px; /* Distance from the top of the screen */
     right: 20px; /* Distance from the right of the screen */
     background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient background */
