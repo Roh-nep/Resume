@@ -24,27 +24,27 @@ body {
 }
 /* Blog Button Styling */
 .blog-button {
-    position: fixed; /* Fix it in the top-right corner */
-    top: 20px; /* Distance from the top */
-    right: 20px; /* Distance from the right */
-    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient color */
+    position: fixed; /* Fix the button's position */
+    top: 20px; /* Distance from the top of the screen */
+    right: 20px; /* Distance from the right of the screen */
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient background */
     color: #fff; /* White text */
     padding: 12px 24px; /* Button size */
     font-size: 16px; /* Text size */
     font-weight: bold;
     border-radius: 50px; /* Rounded corners */
     text-decoration: none; /* Remove underline */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Shadow for visibility */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow for visibility */
+    z-index: 1000; /* Keeps it above all other content */
     transition: transform 0.2s, box-shadow 0.2s; /* Smooth animation */
-    z-index: 999; /* Make sure it's on top of other content */
 }
 
 /* Hover Effect */
 .blog-button:hover {
-    transform: scale(1.1); /* Slightly increase size on hover */
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
-    background: linear-gradient(135deg, #ff9a8b, #ff6a88); /* Slightly brighter gradient */
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3); /* Deeper shadow */
     cursor: pointer;
+    background: linear-gradient(135deg, #ff9a8b, #ff6a88); /* Slightly brighter gradient */
 }
 
 /* Header Section */
