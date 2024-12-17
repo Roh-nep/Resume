@@ -48,6 +48,15 @@ header p {
     font-size: 1.2rem;
     margin-bottom: 20px;
 }
+h2 {
+    margin-top: 20px; /* Space above the heading */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+p, li {
+    line-height: 1.6; /* Increase line spacing */
+    margin-bottom: 8px; /* Add spacing between lines */
+}
 
 .btn {
     display: inline-block;
