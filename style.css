@@ -88,7 +88,7 @@ p, li {
     background: #16a34a; /* Darker green when hovered */
 }
 #about-me {
-    text-align: left;
+    text-align: Center;
     margin: 0 auto;
     max-width: 800px;
     font-size: 16px;
