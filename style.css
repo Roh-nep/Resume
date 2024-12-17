@@ -18,6 +18,10 @@ body {
     text-align: center;
     padding: 40px 0;
 }
+.centered-text {
+    text-align: center; /* Centers inline and inline-block elements like text */
+    margin: 0 auto;     /* Ensures the div itself is centered if necessary */
+}
 
 /* Header Section */
 header {
