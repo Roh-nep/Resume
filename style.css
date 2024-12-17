@@ -22,31 +22,30 @@ body {
     text-align: center; /* Centers inline and inline-block elements like text */
     margin: 0 auto;     /* Ensures the div itself is centered if necessary */
 }
-/* Blog Button Styling */
+/* Blog Button Styling - Fixed at Top Right */
 .blog-button {
-    position:fixed; /* Fix the button's position */
-    top: 20px; /* Distance from the top of the screen */
-    right: 20px; /* Distance from the right of the screen */
+    position: fixed !important; /* Override any conflicting positions */
+    top: 20px !important; /* Lock distance from the top */
+    right: 20px !important; /* Lock distance from the right */
     background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient background */
     color: #fff; /* White text */
-    padding: 12px 24px; /* Button size */
+    padding: 12px 24px; /* Button padding */
     font-size: 16px; /* Text size */
-    font-weight: bold;
+    font-weight: bold; /* Bold text */
     border-radius: 50px; /* Rounded corners */
     text-decoration: none; /* Remove underline */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow for visibility */
-    z-index: 1000; /* Keeps it above all other content */
-    transition: transform 0.2s, box-shadow 0.2s; /* Smooth animation */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    z-index: 10000 !important; /* Ensure it stays on top of other elements */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth hover effect */
 }
 
 /* Hover Effect */
 .blog-button:hover {
-    transform: scale(1.1); /* Slightly enlarge the button on hover */
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3); /* Deeper shadow */
-    cursor: pointer;
-    background: linear-gradient(135deg, #ff9a8b, #ff6a88); /* Slightly brighter gradient */
+    transform: scale(1.1); /* Slight enlargement on hover */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+    cursor: pointer; /* Pointer cursor */
+    background: linear-gradient(135deg, #ff9a8b, #ff6a88); /* Brighter gradient on hover */
 }
-
 /* Header Section */
 header {
     background: linear-gradient(to right, #3b82f6, #2563eb);
