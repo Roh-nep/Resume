@@ -21,8 +21,18 @@
             <div class="profile">
                 <img src="image.png.png" alt="Profile Picture">
                 <h2>Hi! I am Rohit Tiwari</h2>
-                <p>Civil Engineer | Structural Designer | Future Entrepreneur</p>
+                <h2>I am a <span id="typed-text"></span></h2> <!-- Add the target element here -->
                 <a href="#contact" class="btn">Contact Me</a>
+                <!-- Typed.js Library (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed('#typed-text', {
+            strings: ["Civil Engineer", "Structural Designer", "Future Entrepreneur"],
+            typeSpeed: 60,  // Typing speed
+            backSpeed: 40,  // Backspacing speed
+            loop: true      // Animation repeats infinitely
+        });
+    </script>
             </div>
         </div>
     </header>
