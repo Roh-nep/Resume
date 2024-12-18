@@ -82,15 +82,19 @@ p, li {
 }
 
 .btn {
+     display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
     background: linear-gradient(90deg, #28a745, #56d58c);
   color: #fff;
-  border: none;
-  border-radius: 5px;
-  transition: all 0.3s ease;
+  text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
 .btn:hover {
     transform: scale(1.1);
+     background: #16a34a;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 .back-link {
