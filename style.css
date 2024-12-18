@@ -7,15 +7,24 @@
 }
 
 body {
-  background: linear-gradient(-30deg, #1e90ff, #00bcd4, #4caf50, #ff9800);
-  background-size: 400% 400%;
-  animation: gradientBG 60s ease infinite;
+    background: linear-gradient(-30deg, #1e90ff, #00bcd4, #4caf50, #ff9800);
+    background-size: 300% 300%; /* Makes the gradient large enough to animate */
+    animation: gradientBG 35s ease infinite; /* Smooth infinite animation */
+    margin: 0;
+    height: 100vh; /* Full viewport height */
 }
 
+/* Define the animation */
 @keyframes gradientBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .container {
